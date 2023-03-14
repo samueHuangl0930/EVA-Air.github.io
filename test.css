@@ -1,0 +1,459 @@
+html,
+body,
+main {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+header {
+    background-color: blueviolet;
+}
+
+section {
+    padding: 0 3rem;
+}
+
+.LOGO {
+    width: 150px;
+    height: 80px;
+}
+
+
+
+.CHWA {
+    width: 100%;
+    height: 100%;
+}
+
+header a {
+    text-decoration: underline;
+    width: auto;
+
+}
+
+header ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
+
+header ul li a:link {
+    color: white
+}
+
+header ul li a:visited {
+    color: white
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav text {
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-nav .signout {
+    margin-left: 20px;
+    width: 100px;
+    background-color: red;
+}
+
+
+
+.pandect {
+    height: 200px;
+}
+
+.pandect span p {
+    font-size: 20px;
+    color: blue;
+}
+
+.pandect .grade {
+    border: 2px solid black;
+    width: 300px;
+    height: auto;
+    position: relative;
+}
+
+.grade ul li {
+    list-style-type: none;
+    /* background-color: white; */
+    width: 100%;
+}
+
+.list {
+    /* background-color: blue; */
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+
+}
+
+.list .box {
+    padding: 0 5px;
+}
+
+.item-list {
+    padding: 0px 5px;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+/*模擬考*/
+.practice-exam {
+    height: 190px;
+    /* background-color: brown; */
+    /* width: 200px; */
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: scroll; */
+    border: 2px solid black;
+}
+
+.practice-exam .title {
+    width: 100%;
+    /* width: 180px; */
+    background-color: #ADADAD;
+    display: flex;
+    justify-content: center;
+}
+
+/*報表編號*/
+.report-number {
+    height: 190px;
+    /* background-color: brown; */
+    /* width: 350px; */
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.report-number .title {
+    width: 100%;
+    /* width: 180px; */
+    background-color: #ADADAD;
+    display: flex;
+    justify-content: center;
+}
+
+/* 班級 */
+.class {
+    height: 190px;
+    /* background-color: brown; */
+    /* width: 200px; */
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.class .title {
+    width: 100%;
+    /* width: 180px; */
+    background-color: #ADADAD;
+    display: flex;
+    justify-content: center;
+}
+
+/*類組*/
+.kind-group {
+    height: 190px;
+    /* background-color: brown; */
+    /* width: 200px; */
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.kind-group .title {
+    width: 100%;
+    /* width: 180px; */
+    background-color: #ADADAD;
+    display: flex;
+    justify-content: center;
+}
+
+/*考試科目*/
+.test-suject {
+    height: 190px;
+    /* background-color: brown; */
+    /* width: 400px; */
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.test-suject .title {
+    width: 100%;
+    /* width: 180px; */
+    background-color: #ADADAD;
+    display: flex;
+    justify-content: end;
+
+}
+
+.test-suject .title p {
+    width: 60%;
+    text-align: right;
+}
+
+.test-suject .title i {
+    width: 40%;
+    color: red;
+    text-align: right;
+    font-weight: 800;
+}
+
+.test-sujectarea {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.test-sujectarea button {
+    margin: 4px;
+    aspect-ratio: 1/1;
+}
+
+
+.table_outer {
+    width: 100%;
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.table-responsive table {
+    width: 100%;
+    white-space: nowrap;
+    border: 2px solid black;
+}
+
+.table_scroll {
+    width: 1850px;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+th,
+td {
+    text-align: center;
+    border: 2px solid black;
+}
+
+td {
+    word-break: keep-all;
+}
+
+/*欄位寬度設定*/
+.id {
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+/*凍結表頭/行頭*/
+/*sticky會跟著上一層的overfloat跑！！因此要定義一個外框*/
+.table-sticky-wrapper {
+    width: 100%;
+    height: 600px;
+    /*外框的高度*/
+    overflow: auto;
+}
+
+table.table-sticky {
+    table-layout: fixed;
+    min-width: 100%;
+    width: auto;
+    overflow: unset !important
+}
+
+.table-sticky th {
+    position: sticky;
+    word-break: keep-all;
+    background: #fff
+}
+
+.table-sticky td {
+    border-right: 1px solid #ddd;
+    text-align: right
+}
+
+.table-sticky thead tr th:first-of-type {
+    left: 0;
+    /*sticky要用 上下左右定位*/
+    z-index: 3;
+    border-right: 0;
+    box-shadow: -2px -2px 0 inset #ddd
+}
+
+.table-sticky thead tr th {
+    top: 0;
+    /*sticky要用 上下左右定位*/
+    background: #f7f7f7;
+    vertical-align: top;
+    border-bottom: 0;
+    border-right: 1px solid #ddd;
+    box-shadow: 0 -2px 0 inset #ddd;
+    z-index: 2;
+}
+
+/*sticky要用 上下左右定位*/
+.table-sticky tbody th {
+    left: 0;
+    /*定位用*/
+    z-index: 2;
+    /*遮蓋表格內容的圖層層級設定*/
+    box-shadow: -2px 0 0 inset #ddd;
+    /*內框線*/
+}
+
+.table-sticky .card-header {
+    background: #f7f7f7
+}
+
+.table-sticky td a {
+    float: left
+}
+
+/*為了按鈕設定的，刪除不影響*/
+.table-sticky th a {
+    display: inline-block
+}
+
+/*為了按鈕設定的，刪除不影響*/
+
+/*表格做記號：群組底色*/
+table [data-group="0"],
+table tr[data-group="0"]>th {
+    background: #ffffff !important;
+}
+
+table [data-group="1"],
+table tr[data-group="1"]>th {
+    background: #F5F6F7 !important;
+}
+
+@media screen and (max-width: 767px) {
+
+    .table-sticky tbody th,
+    .table-sticky thead tr th:first-of-type {
+        width: unset !important;
+        /*th有時會自帶寬度設定，用以清除*/
+        word-break: break-word;
+        min-width: 100px;
+        max-width: 150px
+    }
+}
+
+/*讓左邊第一直欄的寬度 手機尺寸時不要過寬遮蔽資訊*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+    text {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1460px) {
+    .item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pandect {
+        padding: 0 0 10px 0;
+        max-width: 100% !important;
+        width: 1460px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list {
+        width: 1460px;
+        max-width: 100% !important;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1340px) {
+    .list .box:nth-child(1) {
+        width: 170px;
+    }
+
+    .list .box:nth-child(2) {
+        width: 350px;
+    }
+
+    .list .box:nth-child(3) {
+        width: 170px;
+    }
+
+    .list .box:nth-child(4) {
+        width: 170px;
+    }
+
+    .list .box:nth-child(5) {
+        width: 350px;
+    }
+
+    .list {
+        overflow: hidden;
+        overflow-x: auto;
+        justify-content: none !important;
+    }
+}

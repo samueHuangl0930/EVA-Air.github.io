@@ -1,0 +1,351 @@
+html,
+body,
+main {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+header {
+    background-color: blueviolet;
+}
+
+section {
+    padding: 0 3rem;
+}
+
+.LOGO {
+    width: 150px;
+    height: 80px;
+}
+
+
+
+.CHWA {
+    width: 100%;
+    height: 100%;
+}
+
+header a {
+    text-decoration: underline;
+    width: auto;
+
+}
+
+header ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
+
+header ul li a:link {
+    color: white
+}
+
+header ul li a:visited {
+    color: white
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav text {
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-nav .signout {
+    margin-left: 20px;
+    width: 100px;
+    background-color: red;
+}
+
+
+
+.pandect {
+    height: 250px;
+}
+
+.pandect span p {
+    font-size: 20px;
+    color: blue;
+}
+
+.pandect .grade {
+    border: 2px solid black;
+    width: 420px;
+    height: auto;
+    position: relative;
+}
+
+.grade ul li {
+    list-style-type: none;
+    /* background-color: white; */
+    width: 100%;
+}
+
+.list {
+    /* background-color: blue; */
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+
+}
+
+.list .box {
+    padding: 0 5px;
+}
+
+.item-list {
+    padding: 0px 5px;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+/*模擬考*/
+.practice-exam {
+    height: 233px;
+    /* background-color: brown; */
+    /* width: 200px; */
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: scroll; */
+    border: 2px solid black;
+}
+
+.practice-exam .title {
+    width: 100%;
+    /* width: 180px; */
+    background-color: #ADADAD;
+    display: flex;
+    justify-content: center;
+}
+
+/*報表編號*/
+.report-number {
+    height: 233px;
+    /* background-color: brown; */
+    /* width: 350px; */
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.report-number .title {
+    width: 100%;
+    /* width: 180px; */
+    background-color: #ADADAD;
+    display: flex;
+    justify-content: center;
+}
+
+/* 班級 */
+.class {
+    height: 233px;
+    /* background-color: brown; */
+    /* width: 200px; */
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.class .title {
+    width: 100%;
+    /* width: 180px; */
+    background-color: #ADADAD;
+    display: flex;
+    justify-content: center;
+}
+
+/*類組*/
+.kind-group {
+    height: 233px;
+    /* background-color: brown; */
+    /* width: 200px; */
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.kind-group .title {
+    width: 100%;
+    /* width: 180px; */
+    background-color: #ADADAD;
+    display: flex;
+    justify-content: center;
+}
+
+/*考試科目*/
+.test-suject {
+    height: 233px;
+    /* background-color: brown; */
+    /* width: 400px; */
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.test-suject .title {
+    width: 100%;
+    /* width: 180px; */
+    background-color: #ADADAD;
+    display: flex;
+    justify-content: end;
+
+}
+
+.test-suject .title p {
+    width: 60%;
+    text-align: right;
+}
+
+.test-suject .title i {
+    width: 40%;
+    color: red;
+    text-align: right;
+    font-weight: 800;
+}
+
+.test-sujectarea {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.test-sujectarea button {
+    margin: 4px;
+    aspect-ratio: 1/1;
+}
+
+
+.table_outer {
+    width: 100%;
+}
+
+
+
+.table_scroll {
+    width: 1850px;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+td:first-child,
+th:first-child {
+
+    position: sticky;
+
+    left: 0;
+    /* 首行永遠固定於左 */
+
+    z-index: 1;
+
+    background-color:#7B7B7B;
+
+}
+
+thead tr th {
+
+    position: sticky;
+
+    top: 0;
+    /* 列首永遠固定於上 */
+
+}
+
+th:first-child {
+
+    z-index: 2;
+
+    background-color:#7B7B7B;
+
+}
+
+th,
+td {
+    text-align: center;
+}
+
+td {
+    word-break: keep-all;
+}
+
+/*欄位寬度設定*/
+.id {
+    width: 50px;
+}
+
+@media screen and (max-width:1200px) {
+    text {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1730px) {
+    .item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pandect {
+        padding: 0 0 10px 0;
+        max-width: 100% !important;
+        width: 1730px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list {
+        width: 1730px;
+        max-width: 100% !important;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1340px) {
+    .list .box:nth-child(1) {
+        width: 170px;
+    }
+
+    .list .box:nth-child(2) {
+        width: 350px;
+    }
+
+    .list .box:nth-child(3) {
+        width: 170px;
+    }
+
+    .list .box:nth-child(4) {
+        width: 170px;
+    }
+
+    .list .box:nth-child(5) {
+        width: 350px;
+    }
+
+    .list {
+        overflow: hidden;
+        overflow-x: auto;
+        justify-content: none !important;
+    }
+}
