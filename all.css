@@ -99,7 +99,7 @@ header ul li a:visited {
     flex-direction: row;
     /* justify-content: space-around; */
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1.5fr;
 
 }
 
@@ -227,10 +227,32 @@ header ul li a:visited {
     align-items: center;
 }
 
-.test-sujectarea button {
+.test-sujectarea a {
+    height: 68px;
+    background-color: #ADADAD;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
     margin: 4px;
     aspect-ratio: 1/1;
 }
+
+.test-sujectarea a:after {
+    background-color: #ADADAD;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
 
 .table_outer {
     width: 100%;
@@ -246,33 +268,37 @@ header ul li a:visited {
     overflow-x: auto;
 
 }
-td:first-child, th:first-child {
 
-    position:sticky;
-   
-    left:0; /* 首行永遠固定於左 */
-   
-    z-index:1;
-   
-    background-color:	#8E8E8E;
-   
-   }
-   
-   thead tr th {
-   
-    position:sticky;
-   
-    top:0; /* 列首永遠固定於上 */
-   
-   }
-   
-   th:first-child{
-   
-    z-index:2;
-   
-    background-color:#8E8E8E;
-   
-   }
+td:first-child,
+th:first-child {
+
+    position: sticky;
+
+    left: 0;
+    /* 首行永遠固定於左 */
+
+    z-index: 1;
+
+    background-color: #8E8E8E;
+
+}
+
+thead tr th {
+
+    position: sticky;
+
+    top: 0;
+    /* 列首永遠固定於上 */
+
+}
+
+th:first-child {
+
+    z-index: 2;
+
+    background-color: #8E8E8E;
+
+}
 
 
 

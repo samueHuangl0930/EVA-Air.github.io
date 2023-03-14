@@ -99,7 +99,7 @@ header ul li a:visited {
     flex-direction: row;
     /* justify-content: space-around; */
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1.5fr;
     align-items: flex-end;
 }
 
@@ -227,9 +227,28 @@ header ul li a:visited {
     align-items: center;
 }
 
-.test-sujectarea button {
+
+.test-sujectarea a {
+    height: 68px;
+    background-color: #ADADAD;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
     margin: 4px;
     aspect-ratio: 1/1;
+}
+
+.test-sujectarea a:after {
+    background-color: #ADADAD;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
 }
 
 .table_outer {

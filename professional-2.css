@@ -227,9 +227,28 @@ header ul li a:visited {
     align-items: center;
 }
 
-.test-sujectarea button {
+
+.test-sujectarea a {
+    height: 68px;
+    background-color: #ADADAD;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
     margin: 4px;
     aspect-ratio: 1/1;
+}
+
+.test-sujectarea a:after {
+    background-color: #ADADAD;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -255,7 +274,7 @@ th:first-child {
 
     z-index: 1;
 
-    background-color:#7B7B7B;
+    background-color: #7B7B7B;
 
 }
 
@@ -272,9 +291,10 @@ th:first-child {
 
     z-index: 2;
 
-    background-color:#7B7B7B;
+    background-color: #7B7B7B;
 
 }
+
 th,
 td {
     text-align: center;
