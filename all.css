@@ -1,6 +1,5 @@
 html,
-body,
-main {
+body {
     height: 100%;
     width: 100%;
     margin: 0px;
@@ -8,13 +7,16 @@ main {
 }
 
 
+main {
+    padding-bottom: 10px;
+}
 
 header {
-    background-color: blueviolet;
+    background-color: #674799;
 }
 
 section {
-    padding: 0 3rem;
+    padding: 0 5px;
 }
 
 .LOGO {
@@ -71,11 +73,15 @@ header ul li a:visited {
 
 
 .pandect {
-    height: 50px;
+    height: 260px;
+}
+
+.pandect span {
+    margin-left: 15px;
 }
 
 .pandect span p {
-    font-size: 20px;
+    font-size: 19px;
     color: blue;
 }
 
@@ -94,14 +100,15 @@ header ul li a:visited {
 
 .list {
     /* background-color: blue; */
-    height: 210px;
+    height: 235px;
     display: flex;
     flex-direction: row;
     /* justify-content: space-around; */
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr 1.5fr;
-
+    align-items: flex-end;
 }
+
 
 .list .box {
     padding: 0 5px;
@@ -225,6 +232,7 @@ header ul li a:visited {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
+
 }
 
 .test-sujectarea a {
@@ -237,7 +245,8 @@ header ul li a:visited {
     text-decoration: none;
     color: white;
     margin: 4px;
-    aspect-ratio: 1/1;
+    width: 80px;
+    font-weight: 800;
 }
 
 .test-sujectarea a:after {
@@ -250,24 +259,49 @@ header ul li a:visited {
     color: white;
 }
 
+.test-sujectarea a:hover {
+    background-color: #7B7B7B;
+}
 
-
-
+/*table*/
 
 .table_outer {
     width: 100%;
 }
 
-
-
 .table_scroll {
     width: 1850px;
-
-    /*外框的高度*/
     overflow: hidden;
     overflow-x: auto;
-
 }
+
+
+
+/*格行換色*/
+table tr th {
+    height: 28px;
+    line-height: 28px;
+    background: #f0f7ff;
+}
+
+thead {
+    background-color: #84C1FF;
+}
+
+table tr td {
+    height: 28px;
+    width: 120px;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #d2e8ff;
+}
+
+table tbody tr:hover {
+    background-color: #6A6AFF !important;
+}
+
+/*固定*/
 
 td:first-child,
 th:first-child {
@@ -279,7 +313,7 @@ th:first-child {
 
     z-index: 1;
 
-    background-color: #8E8E8E;
+    background-color: #84C1FF;
 
 }
 
@@ -296,11 +330,9 @@ th:first-child {
 
     z-index: 2;
 
-    background-color: #8E8E8E;
+    background-color: #84C1FF;
 
 }
-
-
 
 th,
 td {

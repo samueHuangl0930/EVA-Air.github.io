@@ -103,7 +103,7 @@
           </nav>
         </section>
       </header>
-      <div class="row py-2 m-0 item">
+      <div class="row py-2 m-0 item px-3">
         <div class="col-md-12 col-lg-3 pandect px-2">
           <span class="d-flex flex-row"
             ><p>九月複習考</p>
@@ -111,8 +111,8 @@
             <p>B102各校各班級成績總表</p></span
           >
           <div class="grade">
-            <ul class="py-2 px-3 m-0">
-              <li>成績總覽(國文)</li>
+            <p class="subject-tests p-0 text-center">成績總覽(國文)</p>
+            <ul class="mb-3 px-3 m-0">
               <li>
                 班平均:
                 <ul>
@@ -142,38 +142,38 @@
               <div id="list-1" class="item-list">
                 <label>
                   <input type="checkbox" />
-                  <span>checkbox</span>
+                  <span>九月複習考</span>
                 </label>
 
                 <label>
                   <input type="checkbox" />
-                  <span>checkbox</span>
+                  <span>第一次複習考</span>
                 </label>
 
                 <label>
                   <input type="checkbox" />
-                  <span>checkbox</span>
+                  <span>第二次複習考</span>
                 </label>
 
                 <label>
                   <input type="checkbox" />
-                  <span>checkbox</span>
+                  <span>第三次複習考</span>
                 </label>
                 <label>
                   <input type="checkbox" />
-                  <span>checkbox</span>
+                  <span>第四次複習考</span>
                 </label>
                 <label>
                   <input type="checkbox" />
-                  <span>checkbox</span>
+                  <span>第五次複習考</span>
                 </label>
                 <label>
                   <input type="checkbox" />
-                  <span>checkbox</span>
+                  <span>第六次複習考</span>
                 </label>
                 <label>
                   <input type="checkbox" />
-                  <span>checkbox</span>
+                  <span>第七次複習考</span>
                 </label>
               </div>
             </form>
@@ -190,7 +190,7 @@
                     id="flexRadioDefault1"
                   />
                   <label class="form-check-label" for="flexRadioDefault1">
-                    radio
+                    B102
                   </label>
                 </div>
                 <div class="form-check">
@@ -201,7 +201,7 @@
                     id="flexRadioDefault1"
                   />
                   <label class="form-check-label" for="flexRadioDefault1">
-                    radio
+                    B103
                   </label>
                 </div>
                 <div class="form-check">
@@ -212,7 +212,7 @@
                     id="flexRadioDefault1"
                   />
                   <label class="form-check-label" for="flexRadioDefault1">
-                    radio
+                    B104
                   </label>
                 </div>
                 <div class="form-check">
@@ -223,7 +223,7 @@
                     id="flexRadioDefault1"
                   />
                   <label class="form-check-label" for="flexRadioDefault1">
-                    radio
+                    B105
                   </label>
                 </div>
                 <div class="form-check">
@@ -234,7 +234,7 @@
                     id="flexRadioDefault1"
                   />
                   <label class="form-check-label" for="flexRadioDefault1">
-                    radio
+                    B106
                   </label>
                 </div>
                 <div class="form-check">
@@ -245,7 +245,7 @@
                     id="flexRadioDefault1"
                   />
                   <label class="form-check-label" for="flexRadioDefault1">
-                    radio
+                    B107
                   </label>
                 </div>
               </div>
@@ -262,27 +262,27 @@
 
                 <div lass="formGroup">
                   <input type="checkbox" name="sort" value="2" />
-                  <label>2</label>
+                  <label>應用外語</label>
                 </div>
 
                 <div lass="formGroup">
                   <input type="checkbox" name="sort" value="3" />
-                  <label>3</label>
+                  <label>機二乙</label>
                 </div>
 
                 <div lass="formGroup">
                   <input type="checkbox" name="sort" value="4" />
-                  <label>4</label>
+                  <label>機三乙</label>
                 </div>
 
                 <div lass="formGroup">
                   <input type="checkbox" name="sort" value="5" />
-                  <label>5</label>
+                  <label>室設一</label>
                 </div>
 
                 <div lass="formGroup">
                   <input type="checkbox" name="sort" value="6" />
-                  <label>6</label>
+                  <label>室設三</label>
                 </div>
               </div>
             </form>
@@ -298,27 +298,27 @@
 
                 <div lass="kindformGroup">
                   <input type="checkbox" name="kind" value="2" />
-                  <label>2</label>
+                  <label>01-機械群</label>
                 </div>
 
                 <div lass="kindformGroup">
                   <input type="checkbox" name="kind" value="3" />
-                  <label>3</label>
+                  <label>02-電機與電子群</label>
                 </div>
 
                 <div lass="kindformGroup">
                   <input type="checkbox" name="kind" value="4" />
-                  <label>4</label>
+                  <label>03-土木建築群</label>
                 </div>
 
                 <div lass="kindformGroup">
                   <input type="checkbox" name="kind" value="5" />
-                  <label>5</label>
+                  <label>04-商業管理群</label>
                 </div>
 
                 <div lass="kindformGroup">
                   <input type="checkbox" name="kind" value="6" />
-                  <label>6</label>
+                  <label>05-設計群</label>
                 </div>
               </div>
             </form>
@@ -343,12 +343,16 @@
         </div>
       </div>
 
-      <div class="table_outer d-flex justify-content-center">
+      <div class="table_outer d-flex justify-content-center px-3 mb-5">
         <div class="table_scroll">
           <table id="myTable" class="tablesorter layer" data-toggle="table">
             <thead>
               <tr>
-                <th colspan="5"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
                 <th colspan="7" class="text-center">國文</th>
                 <th colspan="3" class="text-center">總分排名</th>
               </tr>
@@ -374,18 +378,70 @@
             </thead>
             <tbody>
               <tr>
-                <td class="fixed">248659715</td>
+                <td class="fixed">123456789</td>
                 <td class="fixed">資管系</td>
                 <td class="fixed">01</td>
                 <td class="fixed">01</td>
-                <td class="fixed">中科大</td>
+                <td class="fixed">豬曉諭</td>
                 <td class="fixed">60</td>
                 <td>12</td>
                 <td>72</td>
                 <td>20</td>
-                <td>台中市霧峰區</td>
-                <td>台中市霧峰區</td>
-                <td>台中市霧峰區</td>
+                <td>
+                  能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
+                </td>
+                <td>
+                  能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
+                </td>
+                <td>
+                  能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="fixed">987654321</td>
+                <td class="fixed">資管系</td>
+                <td class="fixed">02</td>
+                <td class="fixed">02</td>
+                <td class="fixed">黃大銘</td>
+                <td class="fixed">70</td>
+                <td>20</td>
+                <td>68</td>
+                <td>15</td>
+                <td>
+                  能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
+                </td>
+                <td>
+                  能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
+                </td>
+                <td>
+                  能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td class="fixed">897654321</td>
+                <td class="fixed">資管系</td>
+                <td class="fixed">03</td>
+                <td class="fixed">03</td>
+                <td class="fixed">黃大銘</td>
+                <td class="fixed">70</td>
+                <td>20</td>
+                <td>68</td>
+                <td>15</td>
+                <td>
+                  能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
+                </td>
+                <td>
+                  能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
+                </td>
+                <td>
+                  能表現主旨，篇幅字數也相當，然而敘述能力有限，不能發揮題旨。
+                </td>
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
