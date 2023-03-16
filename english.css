@@ -114,7 +114,7 @@ header ul li a:visited {
     flex-direction: row;
     /* justify-content: space-around; */
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1.5fr;
+    grid-template-columns: 1.2fr 1.5fr 1fr 1fr 1.5fr;
     align-items: flex-end;
 }
 
@@ -253,7 +253,8 @@ header ul li a:visited {
     text-decoration: none;
     color: white;
     margin: 4px;
-    aspect-ratio: 1/1;
+    width: 80px;
+    font-weight: 800;
 }
 
 .test-sujectarea a:after {
@@ -370,7 +371,7 @@ td {
         width: 1460px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: baseline;
         justify-content: center;
     }
 
@@ -378,7 +379,7 @@ td {
         width: 1460px;
         max-width: 100% !important;
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+        grid-template-columns: 1.2fr 1.5fr 1fr 1fr 1.5fr;
         flex-direction: row;
         align-items: center;
     }

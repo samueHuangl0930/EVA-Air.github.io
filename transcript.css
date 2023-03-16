@@ -10,7 +10,9 @@ main {
 
 
 header {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+    background-color: #674799;
+
 }
 
 section {
@@ -94,7 +96,7 @@ header ul li a:visited {
     flex-direction: row;
     /* justify-content: space-around; */
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1.5fr;
 
 }
 
@@ -240,7 +242,7 @@ table {
 
 
 .table_scroll {
-    width: 1850px;
+    max-width: 960px;
     overflow: hidden;
     overflow-x: auto;
 }
@@ -251,10 +253,22 @@ td {
     border: 0.5px solid black;
     font-size: 15px;
     font-weight: 700;
+    white-space: nowrap;
+
 }
 
 td {
     word-break: keep-all;
+}
+
+.number {
+    position: relative;
+    top: -9px;
+    left: -2px;
+    border: 1px black solid;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
 }
 
 .question p {
@@ -266,7 +280,13 @@ td {
 .answer p {
     font-size: 19px;
     width: 25%;
+    white-space: nowrap
+}
 
+.note {
+    font-size: 13px;
+    font-weight: 900;
+    white-space: nowrap
 }
 
 /*欄位寬度設定*/
@@ -283,6 +303,12 @@ td {
 @media screen and (max-width:1200px) {
     text {
         display: none;
+    }
+
+    .table_scroll {
+        width: 1200px;
+        overflow: hidden;
+        overflow-x: scroll;
     }
 }
 
@@ -301,13 +327,26 @@ td {
     }
 
 
-    .table_scroll {
-        width: 1420px;
-        overflow: hidden;
-        overflow-x: scroll;
-    }
+
 }
 
+@media screen and (max-width:1640px) {
+    .list {
+        width: 1640px;
+        max-width: 100% !important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .list .box:nth-child(1) {
+        width: 220px;
+    }
+
+    .list .box:nth-child(2) {
+        width: 320px;
+    }
+}
 
 @media screen and (max-width:1730px) {
     .item {
@@ -321,10 +360,39 @@ td {
         width: 1730px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: baseline;
+        justify-content: end;
     }
 
-   
+    .list {
+        max-width: 100% !important;
+        width: 1730px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: end;
+    }
+
+    .list .box:nth-child(1) {
+        width: 200px;
+    }
+
+    .list .box:nth-child(2) {
+        width: 350px;
+    }
 }
 
+/* @media screen and (max-width:1865px) {
+    .transcript {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .score {
+        width: 100%;
+    }
+
+    .analyze {
+        width: 100%;
+    }
+} */

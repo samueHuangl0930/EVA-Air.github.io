@@ -6,10 +6,10 @@ body {
     padding: 0px;
 }
 
-
 main {
     padding-bottom: 10px;
 }
+
 
 header {
     background-color: #674799;
@@ -72,13 +72,14 @@ header ul li a:visited {
 
 
 
-
 .pandect {
     height: 260px;
 }
-.pandect span{
+
+.pandect span {
     margin-left: 15px;
 }
+
 .pandect span p {
     font-size: 19px;
     color: blue;
@@ -113,10 +114,9 @@ header ul li a:visited {
     flex-direction: row;
     /* justify-content: space-around; */
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1.5fr;
+    grid-template-columns: 1.2fr 1.5fr 1fr 1fr 1.5fr;
     align-items: flex-end;
 }
-
 
 .list .box {
     padding: 0 5px;
@@ -240,8 +240,8 @@ header ul li a:visited {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
-
 }
+
 
 .test-sujectarea a {
     height: 68px;
@@ -265,10 +265,6 @@ header ul li a:visited {
     justify-content: center;
     text-decoration: none;
     color: white;
-}
-
-.test-sujectarea a:hover {
-    background-color: #7B7B7B;
 }
 
 /*table*/
@@ -351,6 +347,7 @@ td {
     word-break: keep-all;
 }
 
+
 /*欄位寬度設定*/
 .id {
     width: 50px;
@@ -374,7 +371,7 @@ td {
         width: 1460px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: baseline;
         justify-content: center;
     }
 
@@ -382,7 +379,7 @@ td {
         width: 1460px;
         max-width: 100% !important;
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+        grid-template-columns: 1.2fr 1.5fr 1fr 1fr 1.5fr;
         flex-direction: row;
         align-items: center;
     }
