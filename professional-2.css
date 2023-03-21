@@ -20,7 +20,7 @@ section {
 }
 
 .LOGO {
-    width: 150px;
+    width: 170px;
     height: 80px;
 }
 
@@ -281,8 +281,8 @@ header ul li a:visited {
     width: 1850px;
     overflow: hidden;
     overflow-x: auto;
-}
 
+}
 
 
 /*格行換色*/
@@ -294,6 +294,7 @@ table tr th {
 
 thead {
     background-color: #84C1FF;
+    width: 100%;
 }
 
 table tr td {
@@ -306,10 +307,12 @@ table tbody tr:nth-child(odd) {
 }
 
 table tbody tr:hover {
-    background-color: #6A6AFF !important;
+    background-color: #9393FF !important;
 }
 
-/*固定*/
+.fht-cell {
+    width: 120px !important;
+}
 
 td:first-child,
 th:first-child {
@@ -325,35 +328,9 @@ th:first-child {
 
 }
 
-thead tr th {
-
-    position: sticky;
-
-    top: 0;
-    /* 列首永遠固定於上 */
-
-}
-
-th:first-child {
-
-    z-index: 2;
-
-    background-color: #84C1FF;
-
-}
-
-th,
-td {
+td,
+th {
     text-align: center;
-}
-
-td {
-    word-break: keep-all;
-}
-
-/*欄位寬度設定*/
-.id {
-    width: 50px;
 }
 
 @media screen and (max-width:1200px) {
